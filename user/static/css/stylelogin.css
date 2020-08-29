@@ -1,0 +1,55 @@
+.container {
+    display: inline-grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    gap: 1rem 1rem;
+
+    grid-template-areas:
+        " login1 "
+        " email "
+        " password "
+        " auotologin finding "
+        " login2 "
+        " sociallogin "
+        " gosignup "
+        " gosignupseller "
+}
+
+.login1 {grid-area: login1; }
+.email {grid-area: email; }
+.password {grid-area: password; }
+.autologin {grid-area: autologin; }
+.finding {grid-area: finding; }
+.login2 {grid-area: login2; }
+.sociallogin {grid-area: sociallogin; }
+.gosignup {grid-area: gosignup; }
+.gosignupseller {grid-area: gosignupseller; }
+
+
+
+.item:nth-child(2) {
+    grid-row: 1 / 3;
+}
+
+.item:nth-child(3) {
+    grid-row: 1 / 3;
+}
+
+.item:nth-child(4) {
+    grid-row: 1 / 3;
+}
+
+.item:nth-child(6) {
+    grid-row: 1 / 3;
+}
+
+.item:nth-child(8) {
+    grid-row: 1 / 3;
+}
+
+.item:nth-child(9) {
+    grid-row: 1 / 3;
+}
+

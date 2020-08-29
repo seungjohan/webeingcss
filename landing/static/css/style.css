@@ -1,19 +1,25 @@
-. container {
+.container {
     display: inline-grid;
 
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 3rem 1fr 1fr;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 5fr 4fr 4fr 4fr 4fr 1fr ;
 
-    gap: 10px 20px;
+    row-gap: 0rem 2rem 1rem 1rem 2rem;
 
     grid-template-areas:
-        "header header header"
-        "a main b"
-        "footer footer footer"
+        "header"
+        "main"
+        "service1"
+        "service2"
+        "service3"
+        "service4"
+        "footer"
 }
 
 .header {grid-area: header; }
-.siderbar-a {grid-area: a; }
-.main-content {grid-area: main; }
-.siderbar-b {grid-area: b; }
+.main {grid-area: main; }
+.service1 {grid-area: service1; }
+.service2 {grid-area: service2; }
+.service3 {grid-area: service3; }
+.service4 {grid-area: service4; }
 .footer {grid-area: footer; }

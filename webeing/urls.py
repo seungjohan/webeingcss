@@ -17,11 +17,18 @@ from django.contrib import admin
 from django.urls import path, include
 import landing.views
 import user.views
-import food.views
+import mypage.views
+import home.views
+import order.views
+import service.views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('landing.urls'), name="landing"),
     path('user/', include('user.urls')),
-    path('food/', include('food.urls')),
+    path('mypage/', include('mypage.urls')),
+    path('home/', include('home.urls')),
+    path('order/', include('order.urls')),
+    path('service/', include('service.urls')),
 ]

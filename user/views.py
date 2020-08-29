@@ -7,3 +7,9 @@ def login(request):
 
 def signup(request):
     return render(request, 'signup.html')
+
+def signupseller(request):
+    return render(request, 'signupseller.html')
+
+def signupintro(request):
+    return render(request, 'signupintro.html')

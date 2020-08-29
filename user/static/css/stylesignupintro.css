@@ -1,0 +1,28 @@
+.container {
+    display: inline-grid;
+
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 5fr 1fr;
+
+    gap: 1rem 1rem ;
+
+    grid-template-areas:
+        " signup "
+        "customer seller"
+        "login "
+}
+
+
+.signup {grid-area: signup; }
+.customer {grid-area: customer; }
+.seller {grid-area: seller; }
+.login {grid-area: login; }
+
+
+.item:nth-child(1) {
+    grid-row: 1 / 3;
+}
+
+.item:nth-child(3) {
+    grid-row: 1 / 3;
+}
