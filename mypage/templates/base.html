@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <link rel = "styleshooer" type = "text/css" href = "static/css/stylebase.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WEBEING</title>
+
+
+        <div class = "container">
+            <div class = "header">HEADER</div>
+
+        </div>
+
+    </head>
+
+    <body>
+        <div class = "container">
+            <div class = "main">
+                {% block contents %}
+                {% endblock %}
+            </div>
+            <div class = "sidebar-a">SIDEBAR-A</div>
+            <div class = "sidebar-b">SIDEBAR-B</div>
+        </div>
+
+    </body>
+
+
+    <footer>
+
+        <div class = container>
+            <div class = "footer">FOOTER</div>
+        </div>
+
+        <h5><a href = "{% url 'login' %}">LOGIN</a></h5>
+        <h5><a href = "{% url 'signup' %}">SIGHUP</a></h5>
+        <h5><a href = "{% url 'signupintro' %}" >signupintro</a></h5>
+        <h5><a href = "{% url 'signupseller' %}" >signupseller</a></h5>
+        <h5><a href = "{% url 'accountconnect' %}" >accountconnect</a></h5>
+        <h5><a href = "{% url 'goods' %}" >goods</a></h5>
+        <h5><a href = "{% url 'complete' %}" >complete</a></h5>
+        <h5><a href = "{% url 'account' %}" >account</a></h5>
+        <h5><a href = "{% url 'myinformation' %}" >myinformation</a></h5>
+        <h5><a href = "{% url 'orderlist' %}" >orderlist</a></h5>
+        <h5><a href = "{% url 'landing' %}" >landing</a></h5>
+        <h5><a href = "{% url 'home' %}" >home</a></h5>
+        <h5><a href = "{% url 'market' %}" >market</a></h5>
+
+    </footer>
+
+</html>
