@@ -1,0 +1,33 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing</title>
+    </head>
+
+    <body>
+        {% load static %}
+
+        <link rel = "stylesheet" type="text/css" href="/static/css/style.css"/>
+
+
+        <h1>LANDING</h1>
+
+        <div class="container">
+            <div class = "header">A</div>
+            <div class = "main">B</div>
+            <div class = "footer">C</div>
+        </div>
+
+        <scripts src="/static/img/seungjo.jpeg"></scripts>
+    </body>
+
+    <footer>
+        <h5><a href = "{% url 'login' %}">LOGIN</a></h5>
+        <h5><a href = "{% url 'signup' %}">SIGHUP</a></h5>
+        <h5><a href = "{% url 'order' %}" >ORDER</a></h5>
+    </footer>
+</html>

@@ -1,0 +1,19 @@
+. container {
+    display: inline-grid;
+
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 3rem 1fr 1fr;
+
+    gap: 10px 20px;
+
+    grid-template-areas:
+        "header header header"
+        "a main b"
+        "footer footer footer"
+}
+
+.header {grid-area: header; }
+.siderbar-a {grid-area: a; }
+.main-content {grid-area: main; }
+.siderbar-b {grid-area: b; }
+.footer {grid-area: footer; }
