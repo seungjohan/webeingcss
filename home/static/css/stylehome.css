@@ -1,0 +1,22 @@
+.container {
+    display: inline-grid;
+
+    grid-template-columns: 1rf 1rf 1rf;
+    grid-template-rows: 1rf 4rf 4rf 4rf 4rf 1rf;
+
+    row-gap: 1rf 2rf 2rf 2rf 2rf;
+    column-gap: 1rf 1rf; 
+
+    grid-template-areas:
+        "preheader"
+        "card11 card12 card13"
+        "card21 card22 card23"
+        "card31 card32 card33"
+        "card41 card42 card43"
+        "prefooter"
+
+}
+
+.preheader {grid-area: preheader; }
+.card11 {grid-area: card11; }
+.card21 {grid-area: card21;}

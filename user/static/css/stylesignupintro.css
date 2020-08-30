@@ -2,14 +2,16 @@
     display: inline-grid;
 
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
 
     gap: 1rem 1rem ;
 
     grid-template-areas:
+        "preheader"
         " signup "
         "customer seller"
         "login "
+        "prefooter"
 }
 
 

@@ -1,0 +1,28 @@
+.container {
+    display: inline-grid;
+
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+
+    grid-template-areas:
+        "header"
+        "a main b"
+        "footer"
+
+    
+}
+
+.header {grid-area: header; }
+.footer {grid-area: footer; }
+.sidebar-a {grid-area: a; }
+.sidebar-b {grid-area: b; }
+.main {grid-area: main; }
+
+
+.item:nth-child(1) {
+    grid-row: 1/4;
+}
+
+.item:nth-child(3) {
+    grid-row: 1/4;
+}

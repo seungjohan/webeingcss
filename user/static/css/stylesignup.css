@@ -2,11 +2,12 @@
     display: inline-grid;
 
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
     row-gap: 1rem;
 
     grid-template-areas:
+        "preheader"
         " signup1 "
         " socialsignup "
         " email "
@@ -22,6 +23,7 @@
         "agree5"
         "agreeall"
         "signup2"
+        "prefooter"
 }
 
 .signup1 {grid-area: signup1; }

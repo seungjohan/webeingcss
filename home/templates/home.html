@@ -1,11 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-</head>
+{% extends 'base.html' %}
+
 <body>
-    
+    {% block contents %}
+    <title>home</title>
+
+    {% load static %}
+    <link rel = "stylesheet" type="text/css" href="static/css/stylehome.css">
+
+    <div class="container">
+        <div class = "card11">card11</div>
+        <div class = "card21">card21</div>
+    </div>
+
+    {% endblock %}
 </body>
-</html>
+

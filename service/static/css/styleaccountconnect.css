@@ -1,0 +1,26 @@
+.container {
+    display: inline-grid;
+
+    grid-template-columns: 1rf;
+    grid-template-rows: 1rf 2rf 4rf 2rf 4rf 4rf 1rf;
+
+    row-gap: 1rem;
+
+    grid-template-areas:
+        "."
+        "accountmoney"
+        "participate"
+        "webeingmoney"
+        "donaterlist"
+        "pastdonation"
+        "."
+
+    
+
+}
+
+.accountmoney {grid-area: accountmoney; }
+.participate {grid-area: participate; }
+.webeingmoney {grid-area: webeingmoney; }
+.donaterlist {grid-area: donaterlist; }
+.pastdonation {grid-area: pastdonation; }

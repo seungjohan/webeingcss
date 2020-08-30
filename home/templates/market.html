@@ -1,11 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+{% extends 'base.html' %}
+
 <body>
-    
+    {% block contents %}
+    <title>market</title>
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="static/css/stylemarket.css">
+
+    <div class="container">
+        <div class="marketheader">marketheader</div>
+        <div class="food1">food1</div>
+        <div class="food2">food2</div>
+        <div class="food3">food3</div>
+        <div class="map">map</div>
+        <div class="marketinformation">marketinformation</div>
+        <div class="sellerinformation">sellerinformation</div>
+        <div class="foodform">foodform</div>
+    </div>
+
+    {% endblock %}
 </body>
-</html>

@@ -1,0 +1,10 @@
+/* cotainer 안에 또 container 를 달 수는 없을까? */
+
+.cotainer {
+    grid-template-columns: 1rf 1rf;
+    grid-template-rows: 1rf;
+
+    grid-template-areas:
+        "order basket"
+}
+

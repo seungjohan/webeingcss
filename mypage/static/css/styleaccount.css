@@ -1,0 +1,6 @@
+.container {
+    display: inline-grid;
+
+    grid-template-columns: 1rf 5rf 1rf;
+    grid-template-rows: 1rf 3rf 1rf 1rf ;
+}

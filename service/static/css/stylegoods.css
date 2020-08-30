@@ -1,0 +1,18 @@
+.cotainer {
+    display: inline-grid;
+
+    grid-template-columns: 1rf 1rf 1rf;
+    grid-template-rows: 1rf 4rf 1rf;
+
+    row-gap: 1rem;
+
+    grid-template-areas:
+        ". . ."
+        "goods1 goods2 goods3"
+        ". . ."
+
+}
+
+.goods1 {grid-area: goods1; }
+.goods2 {grid-area: goods2; }
+.goods3 {grid-area: goods3; }
