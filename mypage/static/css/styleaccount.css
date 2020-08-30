@@ -1,6 +1,36 @@
+/* 그리드잡는걸 좀 더 연구해봐야할 듯 */
+
 .container {
     display: inline-grid;
 
-    grid-template-columns: 1rf 5rf 1rf;
-    grid-template-rows: 1rf 3rf 1rf 1rf ;
+    grid-template-columns: 1rf;
+    grid-template-rows: 1rf 3rf 1rf 1rf 1rf 1rf 1rf 1rf 1rf 1rf 1rf 1rf 1rf 1rf;
+
+    row-gap: 1rem;
+
+    grid-template-areas:
+        "preheader"
+        "myinformation"
+        "."
+        "category"
+        "email"
+        "presentpassword"
+        "newpassword1"
+        "newpassword2"
+        "passwordchange"
+        "phonenumber"
+        "nickname"
+        "etc"
+        "prefooter"
 }
+
+.myinformation {grid-area: myinformation; }
+.category {grid-area: category; }
+.email {grid-area: email;}
+.presentpassword {grid-area: presentpassword; }
+.newpassword1 {grid-area: newpassword1;}
+.newpassword2 {grid-area: newpassword2;}
+.passwordchange {grid-area: passwordchange; }
+.phonenumber {grid-area: phonenumber;}
+.nickname {grid-area: nickname;}
+.etc {grid-area: etc;}
