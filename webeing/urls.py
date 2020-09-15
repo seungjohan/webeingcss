@@ -15,6 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.static import static 
+from django.conf import settings
+
+
 import landing.views
 import user.views
 import mypage.views
@@ -32,3 +36,5 @@ urlpatterns = [
     path('order/', include('order.urls')),
     path('service/', include('service.urls')),
 ]
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
