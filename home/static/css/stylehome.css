@@ -1,22 +1,32 @@
 .container {
     display: inline-grid;
 
-    grid-template-columns: 1rf 1rf 1rf;
-    grid-template-rows: 1rf 4rf 4rf 4rf 4rf 1rf;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr 4fr 4fr 2fr 1fr;
 
-    row-gap: 1rf 2rf 2rf 2rf 2rf;
-    column-gap: 1rf 1rf; 
+    row-gap: 1fr 2fr 2fr 2fr 2fr;
+    column-gap: 1fr 1fr; 
 
     grid-template-areas:
-        "preheader"
+        "preheader preheader preheader"
         "card11 card12 card13"
         "card21 card22 card23"
         "card31 card32 card33"
         "card41 card42 card43"
-        "prefooter"
+        "page page page"
+        "prefooter preheader preheader"
 
+}
+
+.container:nth-child(6) {
+    grid-row: 1/4;
 }
 
 .preheader {grid-area: preheader; }
 .card11 {grid-area: card11; }
 .card21 {grid-area: card21;}
+.page {
+    grid-area: page; 
+    position: relative;
+    left: 50%;
+}

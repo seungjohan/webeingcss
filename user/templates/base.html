@@ -8,14 +8,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div class = "header">
-            <div class="search">
-                <img src = "{% static '/img/webeing.png' %}" style = "float:left; margin-left:40px; width:50px; height:50px;">
-                <input type="text" placeholder=" 건물명/도로명, 지번으로 검색하세요. ">
 
-                <p style = "float:right; margin-right: 50px;">회원가입</p>
-                <p style = "float:right; margin-right: 50px;">로그인</p>
-           </div>
+        <style>
+            #searchbox {
+                position: relative;
+                left: 50%;
+            }
+        </style>
+
+
+        <div class = "header">
+            <a href = "{% url 'landing' %}">
+                <img src = "{% static '/img/webeing.png' %}" style = "float:left; margin-left:40px; width:50px; height:50px;">
+            </a>
+            <div class = "searchbox">
+                <input type="text" style = "float: center; width: 300px;" placeholder=" 건물명/도로명, 지번으로 검색하세요. ">
+            </div>
+            
+            <p style = "float:right; margin-right: 50px;">회원가입</p>
+            <p style = "float:right; margin-right: 50px;">로그인</p>
         </div>
 
 

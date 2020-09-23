@@ -6,7 +6,7 @@
 
     grid-template-areas:
         "header header header"
-        "a main b"
+        "a main main"
         "footer footer footer"
     
 }
@@ -24,6 +24,10 @@
 
 .container:nth-child(1) {
     grid-row: 1/4;
+}
+
+.container:nth-child(2) {
+    grid-row: 2/4;
 }
 
 .container:nth-child(3) {

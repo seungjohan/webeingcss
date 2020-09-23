@@ -10,10 +10,15 @@
 
 
             <div class = "header">
-                <img src="{% static '/img/webeing.png'%}" alt="webeing" style="float:left; margin-left:10rem; width:50px; height:50px;">
+                <a href = "{% url 'landing' %}">
+                    <img src = "{% static '/img/webeing.png' %}" style = "float:left; margin-left:40px; width:50px; height:50px;">
+                </a>
+                <div class = "searchbox">
+                    <input type="text" style = "float: center; width: 300px;" placeholder=" 건물명/도로명, 지번으로 검색하세요. ">
+                </div>
                 
-                <p style="float:left; margin-left: 2rem; ">로그인</p>
-                <p style="float:left; margin-left: 2rem; ">회원가입</p>
+                <p style = "float:right; margin-right: 50px;">회원가입</p>
+                <p style = "float:right; margin-right: 50px;">로그인</p>
                 
             </div>
 
@@ -36,21 +41,7 @@
     <footer>
 
         <div class = "footer">
-
-            <h5><a href = "{% url 'login' %}">LOGIN</a></h5>
-            <h5><a href = "{% url 'signup' %}">SIGHUP</a></h5>
-            <h5><a href = "{% url 'signupintro' %}" >signupintro</a></h5>
-            <h5><a href = "{% url 'signupseller' %}" >signupseller</a></h5>
-            <h5><a href = "{% url 'accountconnect' %}" >accountconnect</a></h5>
-            <h5><a href = "{% url 'goods' %}" >goods</a></h5>
-            <h5><a href = "{% url 'complete' %}" >complete</a></h5>
-            <h5><a href = "{% url 'account' %}" >account</a></h5>
-            <h5><a href = "{% url 'myinformation' %}" >myinformation</a></h5>
-            <h5><a href = "{% url 'orderlist' %}" >orderlist</a></h5>
-            <h5><a href = "{% url 'landing' %}" >landing</a></h5>
-            <h5><a href = "{% url 'home' %}" >home</a></h5>
-            <h5><a href = "{% url 'market' %}" >market</a></h5>
-
+            footer
         </div>
 
     </footer>
