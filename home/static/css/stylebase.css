@@ -5,24 +5,27 @@
     grid-template-rows: 1fr 5fr 1fr;
 
     grid-template-areas:
-        "header"
+        "header header header"
         "a main b"
-        "footer"
-
+        "footer footer footer"
     
 }
 
 .header {grid-area: header; }
 .footer {grid-area: footer; }
-.sidebar-a {grid-area: a; }
-.sidebar-b {grid-area: b; }
+.leftbar {grid-area: a; }
+.rightbar {grid-area: b; }
 .main {grid-area: main; }
+.footer {
+    grid-area: footer; 
+    background-color: #CED4DA;
+}
 
 
-.item:nth-child(1) {
+.container:nth-child(1) {
     grid-row: 1/4;
 }
 
-.item:nth-child(3) {
+.container:nth-child(3) {
     grid-row: 1/4;
 }

@@ -4,7 +4,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 10fr repeat(4, 7fr) 5fr ;
 
-    row-gap: 1rem 7rem 7rem 7rem 7rem 5rem;
+    row-gap: 1rem 20rem 20rem 20rem 20rem 10rem;
 
     grid-template-areas:
         "header"
@@ -16,32 +16,48 @@
         "footer"
 }
 
- 
-.header .top-fixed {
-    width: 1024px;
-    min-width: 1024px !important;
-    left: 50%;
-    margin-left: -512px;
+
+.header {
+    grid-area: header; 
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    z-index : 6;
 }
-
-
-.header {grid-area: header; }
-.main {grid-area: main; }
-.service1 {grid-area: service1; }
-.service2 {grid-area: service2; }
-.service3 {grid-area: service3; }
-.service4 {grid-area: service4; }
-.footer {grid-area: footer; }
+.main {
+    grid-area: main; 
+    z-index : 5; 
+}
+.service1 {
+    grid-area: service1; 
+    background-color: #F1FAE9;
+}
+.service2 {
+    grid-area: service2; 
+    background-color: #F1FAE9;
+}
+.service3 {
+    grid-area: service3; 
+    background-color: #F1FAE9;
+}
+.service4 {
+    grid-area: service4; 
+    background-color: #F1FAE9;
+}
+.footer {
+    grid-area: footer; 
+    background-color: #CED4DA;
+}
 
 
 .insidecontainer1 {
     display: inline-grid;
 
     grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
-    grid-template-rows: 1fr 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 3fr 1fr;
 
-    column-gap: 0rem 3rem 3rem 0rem;
-    row-gap: 3rem 3rem 0rem;
+    column-gap: 0rem 5rem 5rem 0rem;
+    row-gap: 0rem 3rem 0rem;
 
     grid-template-areas:
         ". . . . ."
@@ -51,8 +67,8 @@
 
 }
 
-.item-nth:child(2) {
-    grid-column: 2 / 4;
+.insdiecontainer1:nth-child(2) {
+    grid-column: 2 / 5;
 }
 
 .content {grid-area: content; }
@@ -64,15 +80,13 @@
 .insidecontainer2 {
     display: inline-grid;
 
-    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
     grid-template-rows: 1fr 7fr 1fr;
 
-    column-gap: 0rem 3rem 3rem 0rem;
-
     grid-template-areas:
-        ". . . . ."
-        ". card11 card12 card13 ."
-        ". . . . ."
+        ". . . . . . ."
+        ". card11 . card12 . card13 ."
+        ". . . . . . ."
 
 }
 

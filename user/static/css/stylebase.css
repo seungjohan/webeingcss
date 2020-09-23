@@ -7,9 +7,9 @@
     row-gap: 2rem 2rem;
 
     grid-template-areas:
-        "header "
+        "header header header"
         "a main b"
-        "footer "
+        "footer footer footer"
 }
 
 .item:nth-child(1) {
@@ -20,8 +20,13 @@
     grid-row: 1 / 4;
 }
 
-.header {grid-area: header; }
+.header {
+    grid-area: header; 
+}
 .sidebar-a {grid-area: a; }
 .main {grid-area: main; }
 .sidebar-b {grid-area: b; }
-.footer {grid-area: footer; }
+.footer {
+    grid-area: footer; 
+    background-color: #CED4DA;
+}

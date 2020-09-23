@@ -7,24 +7,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WEBEING</title>
 
+        <div class = "header">
+            <div class="search">
+                <img src = "{% static '/img/webeing.png' %}" style = "float:left; margin-left:40px; width:50px; height:50px;">
+                <input type="text" placeholder=" 건물명/도로명, 지번으로 검색하세요. ">
 
-        <div class = "container">
-            <div class = "header">HEADER</div>
-
+                <p style = "float:right; margin-right: 50px;">회원가입</p>
+                <p style = "float:right; margin-right: 50px;">로그인</p>
+           </div>
         </div>
+
 
     </head>
 
     <body>
-        <div class = "container">
-            <div class = "main">
-                {% block contents %}
-                {% endblock %}
-            </div>
-            <div class = "sidebar-a">SIDEBAR-A</div>
-            <div class = "sidebar-b">SIDEBAR-B</div>
+
+        <div class = "main">
+            {% block contents %}
+            {% endblock %}
         </div>
 
     </body>
@@ -32,23 +33,10 @@
 
     <footer>
 
-        <div class = container>
-            <div class = "footer">FOOTER</div>
+        <div class = "footer">
+            Footer
         </div>
-
-        <h5><a href = "{% url 'login' %}">LOGIN</a></h5>
-        <h5><a href = "{% url 'signup' %}">SIGHUP</a></h5>
-        <h5><a href = "{% url 'signupintro' %}" >signupintro</a></h5>
-        <h5><a href = "{% url 'signupseller' %}" >signupseller</a></h5>
-        <h5><a href = "{% url 'accountconnect' %}" >accountconnect</a></h5>
-        <h5><a href = "{% url 'goods' %}" >goods</a></h5>
-        <h5><a href = "{% url 'complete' %}" >complete</a></h5>
-        <h5><a href = "{% url 'account' %}" >account</a></h5>
-        <h5><a href = "{% url 'myinformation' %}" >myinformation</a></h5>
-        <h5><a href = "{% url 'orderlist' %}" >orderlist</a></h5>
-        <h5><a href = "{% url 'landing' %}" >landing</a></h5>
-        <h5><a href = "{% url 'home' %}" >home</a></h5>
-        <h5><a href = "{% url 'market' %}" >market</a></h5>
+     
 
     </footer>
 
